@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: org.eclipse.rdf4j.rio.trig.TriGPrettyWriterTest
+-------------------------------------------------------------------------------
+Tests run: 60, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 1.144 s - in org.eclipse.rdf4j.rio.trig.TriGPrettyWriterTest

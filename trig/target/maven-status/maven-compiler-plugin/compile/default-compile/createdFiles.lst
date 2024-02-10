@@ -1,0 +1,9 @@
+org\eclipse\rdf4j\rio\trig\package-info.class
+org\eclipse\rdf4j\rio\trigstar\TriGStarWriterFactory.class
+org\eclipse\rdf4j\rio\trigstar\TriGStarParserFactory.class
+org\eclipse\rdf4j\rio\trig\TriGParser.class
+org\eclipse\rdf4j\rio\trigstar\TriGStarParser.class
+org\eclipse\rdf4j\rio\trig\TriGWriterFactory.class
+org\eclipse\rdf4j\rio\trig\TriGWriter.class
+org\eclipse\rdf4j\rio\trig\TriGParserFactory.class
+org\eclipse\rdf4j\rio\trigstar\TriGStarWriter.class

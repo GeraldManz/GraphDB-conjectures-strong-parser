@@ -1,0 +1,12 @@
+org\eclipse\rdf4j\rio\trigstar\TriGStarMimeTypeRDFFormatTest.class
+org\eclipse\rdf4j\rio\trig\TriGWriterBackgroundTest.class
+org\eclipse\rdf4j\rio\trigstar\TriGStarWriterTest.class
+org\eclipse\rdf4j\rio\trigstar\TriGStarHandlingTest.class
+org\eclipse\rdf4j\rio\trig\AbstractTriGWriterTest.class
+org\eclipse\rdf4j\rio\trig\TriGPrettyWriterTest.class
+org\eclipse\rdf4j\rio\trig\TriGPrettyWriterBackgroundTest.class
+org\eclipse\rdf4j\rio\trigstar\TriGStarParserTest.class
+org\eclipse\rdf4j\rio\trig\TriGParserCustomTest.class
+org\eclipse\rdf4j\rio\trig\TriGWriterTest.class
+org\eclipse\rdf4j\rio\trigstar\TriGStarPrettyWriterTest.class
+org\eclipse\rdf4j\rio\trig\TriGHandlingTest.class

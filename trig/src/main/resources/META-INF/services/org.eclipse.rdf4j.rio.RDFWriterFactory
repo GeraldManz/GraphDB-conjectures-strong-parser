@@ -1,0 +1,2 @@
+org.eclipse.rdf4j.rio.trig.TriGWriterFactory
+org.eclipse.rdf4j.rio.trigstar.TriGStarWriterFactory

@@ -1,0 +1,622 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="org.eclipse.rdf4j.query.parser.sparql.SPARQLParserTest" time="2.805" tests="42" errors="4" skipped="0" failures="0">
+  <properties>
+    <property name="java.specification.version" value="19"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.class.path" value="C:\Users\gr4ad\Downloads\rdf4j-main\rdf4j-main\core\queryparser\sparql\target\test-classes;C:\Users\gr4ad\Downloads\rdf4j-main\rdf4j-main\core\queryparser\sparql\target\classes;C:\Users\gr4ad\.m2\repository\org\eclipse\rdf4j\rdf4j-queryparser-api\4.2.3-SNAPSHOT\rdf4j-queryparser-api-4.2.3-SNAPSHOT.jar;C:\Users\gr4ad\.m2\repository\org\eclipse\rdf4j\rdf4j-rio-trig\4.2.3-SNAPSHOT\rdf4j-rio-trig-4.2.3-SNAPSHOT.jar;C:\Users\gr4ad\.m2\repository\org\eclipse\rdf4j\rdf4j-rio-api\4.2.3-SNAPSHOT\rdf4j-rio-api-4.2.3-SNAPSHOT.jar;C:\Users\gr4ad\.m2\repository\org\eclipse\rdf4j\rdf4j-common-xml\4.2.3-SNAPSHOT\rdf4j-common-xml-4.2.3-SNAPSHOT.jar;C:\Users\gr4ad\.m2\repository\jakarta\xml\bind\jakarta.xml.bind-api\2.3.3\jakarta.xml.bind-api-2.3.3.jar;C:\Users\gr4ad\.m2\repository\jakarta\activation\jakarta.activation-api\1.2.2\jakarta.activation-api-1.2.2.jar;C:\Users\gr4ad\.m2\repository\com\github\jsonld-java\jsonld-java\0.13.4\jsonld-java-0.13.4.jar;C:\Users\gr4ad\.m2\repository\org\slf4j\jcl-over-slf4j\1.7.36\jcl-over-slf4j-1.7.36.jar;C:\Users\gr4ad\.m2\repository\org\eclipse\rdf4j\rdf4j-rio-turtle\4.2.3-SNAPSHOT\rdf4j-rio-turtle-4.2.3-SNAPSHOT.jar;C:\Users\gr4ad\.m2\repository\commons-io\commons-io\2.11.0\commons-io-2.11.0.jar;C:\Users\gr4ad\.m2\repository\org\eclipse\rdf4j\rdf4j-rio-datatypes\4.2.3-SNAPSHOT\rdf4j-rio-datatypes-4.2.3-SNAPSHOT.jar;C:\Users\gr4ad\.m2\repository\org\eclipse\rdf4j\rdf4j-rio-languages\4.2.3-SNAPSHOT\rdf4j-rio-languages-4.2.3-SNAPSHOT.jar;C:\Users\gr4ad\.m2\repository\org\eclipse\rdf4j\rdf4j-query\4.2.3-SNAPSHOT\rdf4j-query-4.2.3-SNAPSHOT.jar;C:\Users\gr4ad\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.13.4\jackson-annotations-2.13.4.jar;C:\Users\gr4ad\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.13.4\jackson-core-2.13.4.jar;C:\Users\gr4ad\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.13.4.2\jackson-databind-2.13.4.2.jar;C:\Users\gr4ad\.m2\repository\org\apache\commons\commons-text\1.10.0\commons-text-1.10.0.jar;C:\Users\gr4ad\.m2\repository\org\apache\commons\commons-lang3\3.12.0\commons-lang3-3.12.0.jar;C:\Users\gr4ad\.m2\repository\org\eclipse\rdf4j\rdf4j-queryalgebra-model\4.2.3-SNAPSHOT\rdf4j-queryalgebra-model-4.2.3-SNAPSHOT.jar;C:\Users\gr4ad\.m2\repository\org\eclipse\rdf4j\rdf4j-model\4.2.3-SNAPSHOT\rdf4j-model-4.2.3-SNAPSHOT.jar;C:\Users\gr4ad\.m2\repository\org\eclipse\rdf4j\rdf4j-model-api\4.2.3-SNAPSHOT\rdf4j-model-api-4.2.3-SNAPSHOT.jar;C:\Users\gr4ad\.m2\repository\org\eclipse\rdf4j\rdf4j-common-annotation\4.2.3-SNAPSHOT\rdf4j-common-annotation-4.2.3-SNAPSHOT.jar;C:\Users\gr4ad\.m2\repository\org\eclipse\rdf4j\rdf4j-model-vocabulary\4.2.3-SNAPSHOT\rdf4j-model-vocabulary-4.2.3-SNAPSHOT.jar;C:\Users\gr4ad\.m2\repository\org\eclipse\rdf4j\rdf4j-common-exception\4.2.3-SNAPSHOT\rdf4j-common-exception-4.2.3-SNAPSHOT.jar;C:\Users\gr4ad\.m2\repository\org\eclipse\rdf4j\rdf4j-common-text\4.2.3-SNAPSHOT\rdf4j-common-text-4.2.3-SNAPSHOT.jar;C:\Users\gr4ad\.m2\repository\org\eclipse\rdf4j\rdf4j-common-io\4.2.3-SNAPSHOT\rdf4j-common-io-4.2.3-SNAPSHOT.jar;C:\Users\gr4ad\.m2\repository\org\eclipse\rdf4j\rdf4j-common-util\4.2.3-SNAPSHOT\rdf4j-common-util-4.2.3-SNAPSHOT.jar;C:\Users\gr4ad\.m2\repository\org\eclipse\rdf4j\rdf4j-common-iterator\4.2.3-SNAPSHOT\rdf4j-common-iterator-4.2.3-SNAPSHOT.jar;C:\Users\gr4ad\.m2\repository\com\google\guava\guava\30.1.1-jre\guava-30.1.1-jre.jar;C:\Users\gr4ad\.m2\repository\com\google\guava\failureaccess\1.0.1\failureaccess-1.0.1.jar;C:\Users\gr4ad\.m2\repository\com\google\guava\listenablefuture\9999.0-empty-to-avoid-conflict-with-guava\listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar;C:\Users\gr4ad\.m2\repository\org\openjdk\jmh\jmh-core\1.35\jmh-core-1.35.jar;C:\Users\gr4ad\.m2\repository\net\sf\jopt-simple\jopt-simple\5.0.4\jopt-simple-5.0.4.jar;C:\Users\gr4ad\.m2\repository\org\apache\commons\commons-math3\3.2\commons-math3-3.2.jar;C:\Users\gr4ad\.m2\repository\org\openjdk\jmh\jmh-generator-annprocess\1.35\jmh-generator-annprocess-1.35.jar;C:\Users\gr4ad\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.8.2\junit-jupiter-engine-5.8.2.jar;C:\Users\gr4ad\.m2\repository\org\junit\platform\junit-platform-engine\1.8.2\junit-platform-engine-1.8.2.jar;C:\Users\gr4ad\.m2\repository\org\opentest4j\opentest4j\1.2.0\opentest4j-1.2.0.jar;C:\Users\gr4ad\.m2\repository\org\junit\platform\junit-platform-commons\1.8.2\junit-platform-commons-1.8.2.jar;C:\Users\gr4ad\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.8.2\junit-jupiter-api-5.8.2.jar;C:\Users\gr4ad\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\gr4ad\.m2\repository\org\junit\vintage\junit-vintage-engine\5.8.2\junit-vintage-engine-5.8.2.jar;C:\Users\gr4ad\.m2\repository\junit\junit\4.13.2\junit-4.13.2.jar;C:\Users\gr4ad\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;C:\Users\gr4ad\.m2\repository\org\assertj\assertj-core\3.19.0\assertj-core-3.19.0.jar;C:\Users\gr4ad\.m2\repository\org\mockito\mockito-core\3.8.0\mockito-core-3.8.0.jar;C:\Users\gr4ad\.m2\repository\net\bytebuddy\byte-buddy\1.10.20\byte-buddy-1.10.20.jar;C:\Users\gr4ad\.m2\repository\net\bytebuddy\byte-buddy-agent\1.10.20\byte-buddy-agent-1.10.20.jar;C:\Users\gr4ad\.m2\repository\org\objenesis\objenesis\3.1\objenesis-3.1.jar;C:\Users\gr4ad\.m2\repository\ch\qos\logback\logback-classic\1.2.11\logback-classic-1.2.11.jar;C:\Users\gr4ad\.m2\repository\ch\qos\logback\logback-core\1.2.11\logback-core-1.2.11.jar;C:\Users\gr4ad\.m2\repository\org\slf4j\slf4j-api\1.7.36\slf4j-api-1.7.36.jar;"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="user.variant" value=""/>
+    <property name="java.vendor.url" value="https://java.oracle.com/"/>
+    <property name="user.timezone" value="Europe/Rome"/>
+    <property name="os.name" value="Windows 10"/>
+    <property name="java.vm.specification.version" value="19"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="IT"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-19\bin"/>
+    <property name="sun.java.command" value="C:\Users\gr4ad\AppData\Local\Temp\surefire14073782614557417645\surefirebooter-20230906115055783_3.jar C:\Users\gr4ad\AppData\Local\Temp\surefire14073782614557417645 2023-09-06T11-50-54_387-jvmRun1 surefire-20230906115055783_1tmp surefire_0-20230906115055783_2tmp"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="C:\Users\gr4ad\Downloads\rdf4j-main\rdf4j-main\core\queryparser\sparql\target\test-classes;C:\Users\gr4ad\Downloads\rdf4j-main\rdf4j-main\core\queryparser\sparql\target\classes;C:\Users\gr4ad\.m2\repository\org\eclipse\rdf4j\rdf4j-queryparser-api\4.2.3-SNAPSHOT\rdf4j-queryparser-api-4.2.3-SNAPSHOT.jar;C:\Users\gr4ad\.m2\repository\org\eclipse\rdf4j\rdf4j-rio-trig\4.2.3-SNAPSHOT\rdf4j-rio-trig-4.2.3-SNAPSHOT.jar;C:\Users\gr4ad\.m2\repository\org\eclipse\rdf4j\rdf4j-rio-api\4.2.3-SNAPSHOT\rdf4j-rio-api-4.2.3-SNAPSHOT.jar;C:\Users\gr4ad\.m2\repository\org\eclipse\rdf4j\rdf4j-common-xml\4.2.3-SNAPSHOT\rdf4j-common-xml-4.2.3-SNAPSHOT.jar;C:\Users\gr4ad\.m2\repository\jakarta\xml\bind\jakarta.xml.bind-api\2.3.3\jakarta.xml.bind-api-2.3.3.jar;C:\Users\gr4ad\.m2\repository\jakarta\activation\jakarta.activation-api\1.2.2\jakarta.activation-api-1.2.2.jar;C:\Users\gr4ad\.m2\repository\com\github\jsonld-java\jsonld-java\0.13.4\jsonld-java-0.13.4.jar;C:\Users\gr4ad\.m2\repository\org\slf4j\jcl-over-slf4j\1.7.36\jcl-over-slf4j-1.7.36.jar;C:\Users\gr4ad\.m2\repository\org\eclipse\rdf4j\rdf4j-rio-turtle\4.2.3-SNAPSHOT\rdf4j-rio-turtle-4.2.3-SNAPSHOT.jar;C:\Users\gr4ad\.m2\repository\commons-io\commons-io\2.11.0\commons-io-2.11.0.jar;C:\Users\gr4ad\.m2\repository\org\eclipse\rdf4j\rdf4j-rio-datatypes\4.2.3-SNAPSHOT\rdf4j-rio-datatypes-4.2.3-SNAPSHOT.jar;C:\Users\gr4ad\.m2\repository\org\eclipse\rdf4j\rdf4j-rio-languages\4.2.3-SNAPSHOT\rdf4j-rio-languages-4.2.3-SNAPSHOT.jar;C:\Users\gr4ad\.m2\repository\org\eclipse\rdf4j\rdf4j-query\4.2.3-SNAPSHOT\rdf4j-query-4.2.3-SNAPSHOT.jar;C:\Users\gr4ad\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.13.4\jackson-annotations-2.13.4.jar;C:\Users\gr4ad\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.13.4\jackson-core-2.13.4.jar;C:\Users\gr4ad\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.13.4.2\jackson-databind-2.13.4.2.jar;C:\Users\gr4ad\.m2\repository\org\apache\commons\commons-text\1.10.0\commons-text-1.10.0.jar;C:\Users\gr4ad\.m2\repository\org\apache\commons\commons-lang3\3.12.0\commons-lang3-3.12.0.jar;C:\Users\gr4ad\.m2\repository\org\eclipse\rdf4j\rdf4j-queryalgebra-model\4.2.3-SNAPSHOT\rdf4j-queryalgebra-model-4.2.3-SNAPSHOT.jar;C:\Users\gr4ad\.m2\repository\org\eclipse\rdf4j\rdf4j-model\4.2.3-SNAPSHOT\rdf4j-model-4.2.3-SNAPSHOT.jar;C:\Users\gr4ad\.m2\repository\org\eclipse\rdf4j\rdf4j-model-api\4.2.3-SNAPSHOT\rdf4j-model-api-4.2.3-SNAPSHOT.jar;C:\Users\gr4ad\.m2\repository\org\eclipse\rdf4j\rdf4j-common-annotation\4.2.3-SNAPSHOT\rdf4j-common-annotation-4.2.3-SNAPSHOT.jar;C:\Users\gr4ad\.m2\repository\org\eclipse\rdf4j\rdf4j-model-vocabulary\4.2.3-SNAPSHOT\rdf4j-model-vocabulary-4.2.3-SNAPSHOT.jar;C:\Users\gr4ad\.m2\repository\org\eclipse\rdf4j\rdf4j-common-exception\4.2.3-SNAPSHOT\rdf4j-common-exception-4.2.3-SNAPSHOT.jar;C:\Users\gr4ad\.m2\repository\org\eclipse\rdf4j\rdf4j-common-text\4.2.3-SNAPSHOT\rdf4j-common-text-4.2.3-SNAPSHOT.jar;C:\Users\gr4ad\.m2\repository\org\eclipse\rdf4j\rdf4j-common-io\4.2.3-SNAPSHOT\rdf4j-common-io-4.2.3-SNAPSHOT.jar;C:\Users\gr4ad\.m2\repository\org\eclipse\rdf4j\rdf4j-common-util\4.2.3-SNAPSHOT\rdf4j-common-util-4.2.3-SNAPSHOT.jar;C:\Users\gr4ad\.m2\repository\org\eclipse\rdf4j\rdf4j-common-iterator\4.2.3-SNAPSHOT\rdf4j-common-iterator-4.2.3-SNAPSHOT.jar;C:\Users\gr4ad\.m2\repository\com\google\guava\guava\30.1.1-jre\guava-30.1.1-jre.jar;C:\Users\gr4ad\.m2\repository\com\google\guava\failureaccess\1.0.1\failureaccess-1.0.1.jar;C:\Users\gr4ad\.m2\repository\com\google\guava\listenablefuture\9999.0-empty-to-avoid-conflict-with-guava\listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar;C:\Users\gr4ad\.m2\repository\org\openjdk\jmh\jmh-core\1.35\jmh-core-1.35.jar;C:\Users\gr4ad\.m2\repository\net\sf\jopt-simple\jopt-simple\5.0.4\jopt-simple-5.0.4.jar;C:\Users\gr4ad\.m2\repository\org\apache\commons\commons-math3\3.2\commons-math3-3.2.jar;C:\Users\gr4ad\.m2\repository\org\openjdk\jmh\jmh-generator-annprocess\1.35\jmh-generator-annprocess-1.35.jar;C:\Users\gr4ad\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.8.2\junit-jupiter-engine-5.8.2.jar;C:\Users\gr4ad\.m2\repository\org\junit\platform\junit-platform-engine\1.8.2\junit-platform-engine-1.8.2.jar;C:\Users\gr4ad\.m2\repository\org\opentest4j\opentest4j\1.2.0\opentest4j-1.2.0.jar;C:\Users\gr4ad\.m2\repository\org\junit\platform\junit-platform-commons\1.8.2\junit-platform-commons-1.8.2.jar;C:\Users\gr4ad\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.8.2\junit-jupiter-api-5.8.2.jar;C:\Users\gr4ad\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\gr4ad\.m2\repository\org\junit\vintage\junit-vintage-engine\5.8.2\junit-vintage-engine-5.8.2.jar;C:\Users\gr4ad\.m2\repository\junit\junit\4.13.2\junit-4.13.2.jar;C:\Users\gr4ad\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;C:\Users\gr4ad\.m2\repository\org\assertj\assertj-core\3.19.0\assertj-core-3.19.0.jar;C:\Users\gr4ad\.m2\repository\org\mockito\mockito-core\3.8.0\mockito-core-3.8.0.jar;C:\Users\gr4ad\.m2\repository\net\bytebuddy\byte-buddy\1.10.20\byte-buddy-1.10.20.jar;C:\Users\gr4ad\.m2\repository\net\bytebuddy\byte-buddy-agent\1.10.20\byte-buddy-agent-1.10.20.jar;C:\Users\gr4ad\.m2\repository\org\objenesis\objenesis\3.1\objenesis-3.1.jar;C:\Users\gr4ad\.m2\repository\ch\qos\logback\logback-classic\1.2.11\logback-classic-1.2.11.jar;C:\Users\gr4ad\.m2\repository\ch\qos\logback\logback-core\1.2.11\logback-core-1.2.11.jar;C:\Users\gr4ad\.m2\repository\org\slf4j\slf4j-api\1.7.36\slf4j-api-1.7.36.jar;"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="C:\Users\gr4ad"/>
+    <property name="user.language" value="it"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2023-01-17"/>
+    <property name="java.home" value="C:\Program Files\Java\jdk-19"/>
+    <property name="file.separator" value="\"/>
+    <property name="basedir" value="C:\Users\gr4ad\Downloads\rdf4j-main\rdf4j-main\core\queryparser\sparql"/>
+    <property name="java.vm.compressedOopsMode" value="32-bit"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="surefire.real.class.path" value="C:\Users\gr4ad\AppData\Local\Temp\surefire14073782614557417645\surefirebooter-20230906115055783_3.jar"/>
+    <property name="user.script" value=""/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="19.0.2+7-44"/>
+    <property name="user.name" value="gr4ad"/>
+    <property name="stdout.encoding" value="Cp1252"/>
+    <property name="path.separator" value=";"/>
+    <property name="os.version" value="10.0"/>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="localRepository" value="C:\Users\gr4ad\.m2\repository"/>
+    <property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/"/>
+    <property name="java.io.tmpdir" value="C:\Users\gr4ad\AppData\Local\Temp\"/>
+    <property name="java.version" value="19.0.2"/>
+    <property name="user.dir" value="C:\Users\gr4ad\Downloads\rdf4j-main\rdf4j-main\core\queryparser\sparql"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="native.encoding" value="Cp1252"/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk-19\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Users\gr4ad\Downloads\sonar-scanner-cli-4.6.2.2472-windows\sonar-scanner-4.6.2.2472-windows\bin;C:\Program Files\Java\jdk-17.0.2\bin;C:\Program Files (x86)\nodejs\;C:\Program Files\Java\jdk-19\bin;C:\Program Files\apache-maven-3.8.6\bin;C:\Program Files\Java\javacc-javacc-7.0.10\javacc-javacc-7.0.10\scripts;C:\Program Files\GitHub CLI\;C:\Program Files\Java\apache-ant-1.10.12-bin\apache-ant-1.10.12\bin;C:\Users\gr4ad\AppData\Local\Microsoft\WindowsApps;C:\Users\gr4ad\AppData\Local\atom\bin;C:\Users\gr4ad\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\gr4ad\AppData\Roaming\npm;C:\Users\gr4ad\AppData\Local\GitHubDesktop\bin;."/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="stderr.encoding" value="Cp1252"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="java.vm.version" value="19.0.2+7-44"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="63.0"/>
+  </properties>
+  <testcase name="testParseWildcardSubselectInUpdate" classname="org.eclipse.rdf4j.query.parser.sparql.SPARQLParserTest" time="1.504">
+    <system-out><![CDATA[11:51:00.992 [main] DEBUG org.eclipse.rdf4j.rio.DatatypeHandlerRegistry - Registered service class org.eclipse.rdf4j.rio.datatypes.XMLSchemaDatatypeHandler
+11:51:01.008 [main] DEBUG org.eclipse.rdf4j.rio.DatatypeHandlerRegistry - Registered service class org.eclipse.rdf4j.rio.datatypes.RDFDatatypeHandler
+11:51:01.010 [main] DEBUG org.eclipse.rdf4j.rio.DatatypeHandlerRegistry - Registered service class org.eclipse.rdf4j.rio.datatypes.DBPediaDatatypeHandler
+11:51:01.016 [main] DEBUG org.eclipse.rdf4j.rio.DatatypeHandlerRegistry - Registered service class org.eclipse.rdf4j.rio.datatypes.VirtuosoGeometryDatatypeHandler
+11:51:01.018 [main] DEBUG org.eclipse.rdf4j.rio.DatatypeHandlerRegistry - Registered service class org.eclipse.rdf4j.rio.datatypes.GeoSPARQLDatatypeHandler
+11:51:01.025 [main] DEBUG org.eclipse.rdf4j.rio.LanguageHandlerRegistry - Registered service class org.eclipse.rdf4j.rio.languages.RFC3066LanguageHandler
+11:51:01.029 [main] DEBUG org.eclipse.rdf4j.rio.LanguageHandlerRegistry - Registered service class org.eclipse.rdf4j.rio.languages.BCP47LanguageHandler
+]]></system-out>
+  </testcase>
+  <testcase name="testSES1922PathSequenceWithValueConstant" classname="org.eclipse.rdf4j.query.parser.sparql.SPARQLParserTest" time="0.011">
+    <error message="Range [5, -1) out of bounds for length 46" type="java.lang.StringIndexOutOfBoundsException"><![CDATA[java.lang.StringIndexOutOfBoundsException: Range [5, -1) out of bounds for length 46
+	at java.base/jdk.internal.util.Preconditions$1.apply(Preconditions.java:55)
+	at java.base/jdk.internal.util.Preconditions$1.apply(Preconditions.java:52)
+	at java.base/jdk.internal.util.Preconditions$4.apply(Preconditions.java:213)
+	at java.base/jdk.internal.util.Preconditions$4.apply(Preconditions.java:210)
+	at java.base/jdk.internal.util.Preconditions.outOfBounds(Preconditions.java:98)
+	at java.base/jdk.internal.util.Preconditions.outOfBoundsCheckFromToIndex(Preconditions.java:112)
+	at java.base/jdk.internal.util.Preconditions.checkFromToIndex(Preconditions.java:349)
+	at java.base/java.lang.String.checkBoundsBeginEnd(String.java:4602)
+	at java.base/java.lang.String.substring(String.java:2715)
+	at org.eclipse.rdf4j.query.parser.sparql.ast.SyntaxTreeBuilder.parseQuery(SyntaxTreeBuilder.java:67)
+	at org.eclipse.rdf4j.query.parser.sparql.SPARQLParser.parseQuery(SPARQLParser.java:195)
+	at org.eclipse.rdf4j.query.parser.sparql.SPARQLParserTest.testSES1922PathSequenceWithValueConstant(SPARQLParserTest.java:138)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.junit.platform.commons.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:725)
+	at org.junit.jupiter.engine.execution.MethodInvocation.proceed(MethodInvocation.java:60)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$ValidatingInvocation.proceed(InvocationInterceptorChain.java:131)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.intercept(TimeoutExtension.java:149)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestableMethod(TimeoutExtension.java:140)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestMethod(TimeoutExtension.java:84)
+	at org.junit.jupiter.engine.execution.ExecutableInvoker$ReflectiveInterceptorCall.lambda$ofVoidMethod$0(ExecutableInvoker.java:115)
+	at org.junit.jupiter.engine.execution.ExecutableInvoker.lambda$invoke$0(ExecutableInvoker.java:105)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$InterceptedInvocation.proceed(InvocationInterceptorChain.java:106)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.proceed(InvocationInterceptorChain.java:64)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.chainAndInvoke(InvocationInterceptorChain.java:45)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.invoke(InvocationInterceptorChain.java:37)
+	at org.junit.jupiter.engine.execution.ExecutableInvoker.invoke(ExecutableInvoker.java:104)
+	at org.junit.jupiter.engine.execution.ExecutableInvoker.invoke(ExecutableInvoker.java:98)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$invokeTestMethod$7(TestMethodTestDescriptor.java:214)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.invokeTestMethod(TestMethodTestDescriptor.java:210)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:135)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:66)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:151)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:35)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:54)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:107)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:88)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.lambda$execute$0(EngineExecutionOrchestrator.java:54)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.withInterceptedStreams(EngineExecutionOrchestrator.java:67)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:52)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:114)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:86)
+	at org.junit.platform.launcher.core.DefaultLauncherSession$DelegatingLauncher.execute(DefaultLauncherSession.java:86)
+	at org.apache.maven.surefire.junitplatform.LazyLauncher.execute(LazyLauncher.java:55)
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.execute(JUnitPlatformProvider.java:223)
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invokeAllTests(JUnitPlatformProvider.java:175)
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invoke(JUnitPlatformProvider.java:139)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:456)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:169)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:595)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:581)
+]]></error>
+    <system-out><![CDATA[query: ASK {?A (<foo:bar>)/<foo:foo> <foo:objValue>} 
+]]></system-out>
+  </testcase>
+  <testcase name="testGroupByProjectionHandling_renameVariable" classname="org.eclipse.rdf4j.query.parser.sparql.SPARQLParserTest" time="0.054">
+    <system-out><![CDATA[query: SELECT ?o (?o  AS ?o2) (?o2  AS ?o3) (?o3/2  AS ?o4){
+    ?o ?p ?o .
+} GROUP BY ?o
+sub: T ?o (?o  AS ?o2) (?o2  AS ?o3) (?o3/2  AS ?o4)
+]]></system-out>
+  </testcase>
+  <testcase name="testGroupByProjectionHandling_Aggregate_Alias" classname="org.eclipse.rdf4j.query.parser.sparql.SPARQLParserTest" time="0.019">
+    <system-out><![CDATA[query: SELECT (COUNT(?s) as ?count) (?o AS ?o1) 
+WHERE {
+	?s ?p ?o 
+} GROUP BY ?o
+sub: T (COUNT(?s) as ?count) (?o AS ?o1) 
+WHERE
+]]></system-out>
+  </testcase>
+  <testcase name="testGroupByProjectionHandling_variableEffectivelyAggregationResult" classname="org.eclipse.rdf4j.query.parser.sparql.SPARQLParserTest" time="0.034">
+    <system-out><![CDATA[query: SELECT (COUNT (*) AS ?count) (?count / ?count AS ?result) (?result AS ?temp) (?temp / 2 AS ?temp2) {
+    ?s a ?o .
+}
+sub: T (COUNT (*) AS ?count) (?count / ?count AS ?result) (?result AS ?temp) (?temp / 2 AS ?temp2)
+]]></system-out>
+  </testcase>
+  <testcase name="testDefaultPrefixesInsertDataNoOverride" classname="org.eclipse.rdf4j.query.parser.sparql.SPARQLParserTest" time="0.117">
+    <system-out><![CDATA[11:51:01.985 [main] DEBUG org.eclipse.rdf4j.rio.RDFParserRegistry - Registered service class org.eclipse.rdf4j.rio.trig.TriGParserFactory
+11:51:01.987 [main] DEBUG org.eclipse.rdf4j.rio.RDFParserRegistry - Registered service class org.eclipse.rdf4j.rio.trigstar.TriGStarParserFactory
+11:51:01.991 [main] DEBUG org.eclipse.rdf4j.rio.RDFParserRegistry - Registered service class org.eclipse.rdf4j.rio.turtle.TurtleParserFactory
+11:51:01.993 [main] DEBUG org.eclipse.rdf4j.rio.RDFParserRegistry - Registered service class org.eclipse.rdf4j.rio.turtlestar.TurtleStarParserFactory
+]]></system-out>
+  </testcase>
+  <testcase name="testWildCardPathFixedEnd" classname="org.eclipse.rdf4j.query.parser.sparql.SPARQLParserTest" time="0.026">
+    <system-out><![CDATA[query: PREFIX : <http://example.org/>
+ ASK {:IBM ((:|!:)|(^:|!^:))* :Jane.} 
+sub: X : <http://example.org/>
+ ASK
+]]></system-out>
+  </testcase>
+  <testcase name="testSES1927UnequalLiteralValueConstants1" classname="org.eclipse.rdf4j.query.parser.sparql.SPARQLParserTest" time="0.004">
+    <error message="Range [5, -1) out of bounds for length 52" type="java.lang.StringIndexOutOfBoundsException"><![CDATA[java.lang.StringIndexOutOfBoundsException: Range [5, -1) out of bounds for length 52
+	at java.base/jdk.internal.util.Preconditions$1.apply(Preconditions.java:55)
+	at java.base/jdk.internal.util.Preconditions$1.apply(Preconditions.java:52)
+	at java.base/jdk.internal.util.Preconditions$4.apply(Preconditions.java:213)
+	at java.base/jdk.internal.util.Preconditions$4.apply(Preconditions.java:210)
+	at java.base/jdk.internal.util.Preconditions.outOfBounds(Preconditions.java:98)
+	at java.base/jdk.internal.util.Preconditions.outOfBoundsCheckFromToIndex(Preconditions.java:112)
+	at java.base/jdk.internal.util.Preconditions.checkFromToIndex(Preconditions.java:349)
+	at java.base/java.lang.String.checkBoundsBeginEnd(String.java:4602)
+	at java.base/java.lang.String.substring(String.java:2715)
+	at org.eclipse.rdf4j.query.parser.sparql.ast.SyntaxTreeBuilder.parseQuery(SyntaxTreeBuilder.java:67)
+	at org.eclipse.rdf4j.query.parser.sparql.SPARQLParser.parseQuery(SPARQLParser.java:195)
+	at org.eclipse.rdf4j.query.parser.sparql.SPARQLParserTest.testSES1927UnequalLiteralValueConstants1(SPARQLParserTest.java:288)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.junit.platform.commons.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:725)
+	at org.junit.jupiter.engine.execution.MethodInvocation.proceed(MethodInvocation.java:60)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$ValidatingInvocation.proceed(InvocationInterceptorChain.java:131)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.intercept(TimeoutExtension.java:149)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestableMethod(TimeoutExtension.java:140)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestMethod(TimeoutExtension.java:84)
+	at org.junit.jupiter.engine.execution.ExecutableInvoker$ReflectiveInterceptorCall.lambda$ofVoidMethod$0(ExecutableInvoker.java:115)
+	at org.junit.jupiter.engine.execution.ExecutableInvoker.lambda$invoke$0(ExecutableInvoker.java:105)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$InterceptedInvocation.proceed(InvocationInterceptorChain.java:106)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.proceed(InvocationInterceptorChain.java:64)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.chainAndInvoke(InvocationInterceptorChain.java:45)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.invoke(InvocationInterceptorChain.java:37)
+	at org.junit.jupiter.engine.execution.ExecutableInvoker.invoke(ExecutableInvoker.java:104)
+	at org.junit.jupiter.engine.execution.ExecutableInvoker.invoke(ExecutableInvoker.java:98)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$invokeTestMethod$7(TestMethodTestDescriptor.java:214)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.invokeTestMethod(TestMethodTestDescriptor.java:210)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:135)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:66)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:151)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:35)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:54)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:107)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:88)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.lambda$execute$0(EngineExecutionOrchestrator.java:54)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.withInterceptedStreams(EngineExecutionOrchestrator.java:67)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:52)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:114)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:86)
+	at org.junit.platform.launcher.core.DefaultLauncherSession$DelegatingLauncher.execute(DefaultLauncherSession.java:86)
+	at org.apache.maven.surefire.junitplatform.LazyLauncher.execute(LazyLauncher.java:55)
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.execute(JUnitPlatformProvider.java:223)
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invokeAllTests(JUnitPlatformProvider.java:175)
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invoke(JUnitPlatformProvider.java:139)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:456)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:169)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:595)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:581)
+]]></error>
+    <system-out><![CDATA[query: ASK {?a <foo:bar> "test". ?a <foo:foo> "test"@en .} 
+]]></system-out>
+  </testcase>
+  <testcase name="testSES1927UnequalLiteralValueConstants2" classname="org.eclipse.rdf4j.query.parser.sparql.SPARQLParserTest" time="0.004">
+    <error message="Range [5, -1) out of bounds for length 60" type="java.lang.StringIndexOutOfBoundsException"><![CDATA[java.lang.StringIndexOutOfBoundsException: Range [5, -1) out of bounds for length 60
+	at java.base/jdk.internal.util.Preconditions$1.apply(Preconditions.java:55)
+	at java.base/jdk.internal.util.Preconditions$1.apply(Preconditions.java:52)
+	at java.base/jdk.internal.util.Preconditions$4.apply(Preconditions.java:213)
+	at java.base/jdk.internal.util.Preconditions$4.apply(Preconditions.java:210)
+	at java.base/jdk.internal.util.Preconditions.outOfBounds(Preconditions.java:98)
+	at java.base/jdk.internal.util.Preconditions.outOfBoundsCheckFromToIndex(Preconditions.java:112)
+	at java.base/jdk.internal.util.Preconditions.checkFromToIndex(Preconditions.java:349)
+	at java.base/java.lang.String.checkBoundsBeginEnd(String.java:4602)
+	at java.base/java.lang.String.substring(String.java:2715)
+	at org.eclipse.rdf4j.query.parser.sparql.ast.SyntaxTreeBuilder.parseQuery(SyntaxTreeBuilder.java:67)
+	at org.eclipse.rdf4j.query.parser.sparql.SPARQLParser.parseQuery(SPARQLParser.java:195)
+	at org.eclipse.rdf4j.query.parser.sparql.SPARQLParserTest.testSES1927UnequalLiteralValueConstants2(SPARQLParserTest.java:314)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.junit.platform.commons.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:725)
+	at org.junit.jupiter.engine.execution.MethodInvocation.proceed(MethodInvocation.java:60)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$ValidatingInvocation.proceed(InvocationInterceptorChain.java:131)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.intercept(TimeoutExtension.java:149)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestableMethod(TimeoutExtension.java:140)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestMethod(TimeoutExtension.java:84)
+	at org.junit.jupiter.engine.execution.ExecutableInvoker$ReflectiveInterceptorCall.lambda$ofVoidMethod$0(ExecutableInvoker.java:115)
+	at org.junit.jupiter.engine.execution.ExecutableInvoker.lambda$invoke$0(ExecutableInvoker.java:105)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$InterceptedInvocation.proceed(InvocationInterceptorChain.java:106)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.proceed(InvocationInterceptorChain.java:64)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.chainAndInvoke(InvocationInterceptorChain.java:45)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.invoke(InvocationInterceptorChain.java:37)
+	at org.junit.jupiter.engine.execution.ExecutableInvoker.invoke(ExecutableInvoker.java:104)
+	at org.junit.jupiter.engine.execution.ExecutableInvoker.invoke(ExecutableInvoker.java:98)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$invokeTestMethod$7(TestMethodTestDescriptor.java:214)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.invokeTestMethod(TestMethodTestDescriptor.java:210)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:135)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:66)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:151)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:35)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:54)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:107)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:88)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.lambda$execute$0(EngineExecutionOrchestrator.java:54)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.withInterceptedStreams(EngineExecutionOrchestrator.java:67)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:52)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:114)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:86)
+	at org.junit.platform.launcher.core.DefaultLauncherSession$DelegatingLauncher.execute(DefaultLauncherSession.java:86)
+	at org.apache.maven.surefire.junitplatform.LazyLauncher.execute(LazyLauncher.java:55)
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.execute(JUnitPlatformProvider.java:223)
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invokeAllTests(JUnitPlatformProvider.java:175)
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invoke(JUnitPlatformProvider.java:139)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:456)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:169)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:595)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:581)
+]]></error>
+    <system-out><![CDATA[query: ASK {?a <foo:bar> "test". ?a <foo:foo> "test"^^<foo:bar> .} 
+]]></system-out>
+  </testcase>
+  <testcase name="testGroupByProjectionHandling_Aggregate_NonSimpleExpr" classname="org.eclipse.rdf4j.query.parser.sparql.SPARQLParserTest" time="0.106">
+    <system-out><![CDATA[query: SELECT (COUNT(?s) as ?count) (?o + ?s AS ?o1) 
+WHERE {
+	?s ?p ?o 
+} GROUP BY ?o
+sub: T (COUNT(?s) as ?count) (?o + ?s AS ?o1) 
+WHERE
+]]></system-out>
+  </testcase>
+  <testcase name="testGroupByProjectionHandling_renameVariableWithAggregation" classname="org.eclipse.rdf4j.query.parser.sparql.SPARQLParserTest" time="0.011">
+    <system-out><![CDATA[query: SELECT ?o (?o  AS ?o2) (COUNT (*) AS ?count) (?o2/?count  AS ?newCount){
+    ?o ?p ?o .
+} GROUP BY ?o
+sub: T ?o (?o  AS ?o2) (COUNT (*) AS ?count) (?o2/?count  AS ?newCount)
+]]></system-out>
+  </testcase>
+  <testcase name="testDefaultPrefixesDeleteDataOverride" classname="org.eclipse.rdf4j.query.parser.sparql.SPARQLParserTest" time="0.01"/>
+  <testcase name="testInsertDataLineNumberReporting" classname="org.eclipse.rdf4j.query.parser.sparql.SPARQLParserTest" time="0.111"/>
+  <testcase name="testDefaultPrefixesInsertDataOverride" classname="org.eclipse.rdf4j.query.parser.sparql.SPARQLParserTest" time="0.006">
+    <system-out><![CDATA[TEST INSERT
+]]></system-out>
+  </testcase>
+  <testcase name="testParsedBooleanQueryRootNode" classname="org.eclipse.rdf4j.query.parser.sparql.SPARQLParserTest" time="0.004">
+    <error message="Range [5, -1) out of bounds for length 25" type="java.lang.StringIndexOutOfBoundsException"><![CDATA[java.lang.StringIndexOutOfBoundsException: Range [5, -1) out of bounds for length 25
+	at java.base/jdk.internal.util.Preconditions$1.apply(Preconditions.java:55)
+	at java.base/jdk.internal.util.Preconditions$1.apply(Preconditions.java:52)
+	at java.base/jdk.internal.util.Preconditions$4.apply(Preconditions.java:213)
+	at java.base/jdk.internal.util.Preconditions$4.apply(Preconditions.java:210)
+	at java.base/jdk.internal.util.Preconditions.outOfBounds(Preconditions.java:98)
+	at java.base/jdk.internal.util.Preconditions.outOfBoundsCheckFromToIndex(Preconditions.java:112)
+	at java.base/jdk.internal.util.Preconditions.checkFromToIndex(Preconditions.java:349)
+	at java.base/java.lang.String.checkBoundsBeginEnd(String.java:4602)
+	at java.base/java.lang.String.substring(String.java:2715)
+	at org.eclipse.rdf4j.query.parser.sparql.ast.SyntaxTreeBuilder.parseQuery(SyntaxTreeBuilder.java:67)
+	at org.eclipse.rdf4j.query.parser.sparql.SPARQLParser.parseQuery(SPARQLParser.java:195)
+	at org.eclipse.rdf4j.query.parser.sparql.SPARQLParserTest.testParsedBooleanQueryRootNode(SPARQLParserTest.java:163)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.junit.platform.commons.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:725)
+	at org.junit.jupiter.engine.execution.MethodInvocation.proceed(MethodInvocation.java:60)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$ValidatingInvocation.proceed(InvocationInterceptorChain.java:131)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.intercept(TimeoutExtension.java:149)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestableMethod(TimeoutExtension.java:140)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestMethod(TimeoutExtension.java:84)
+	at org.junit.jupiter.engine.execution.ExecutableInvoker$ReflectiveInterceptorCall.lambda$ofVoidMethod$0(ExecutableInvoker.java:115)
+	at org.junit.jupiter.engine.execution.ExecutableInvoker.lambda$invoke$0(ExecutableInvoker.java:105)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$InterceptedInvocation.proceed(InvocationInterceptorChain.java:106)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.proceed(InvocationInterceptorChain.java:64)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.chainAndInvoke(InvocationInterceptorChain.java:45)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.invoke(InvocationInterceptorChain.java:37)
+	at org.junit.jupiter.engine.execution.ExecutableInvoker.invoke(ExecutableInvoker.java:104)
+	at org.junit.jupiter.engine.execution.ExecutableInvoker.invoke(ExecutableInvoker.java:98)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$invokeTestMethod$7(TestMethodTestDescriptor.java:214)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.invokeTestMethod(TestMethodTestDescriptor.java:210)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:135)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:66)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:151)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:35)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:54)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:107)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:88)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.lambda$execute$0(EngineExecutionOrchestrator.java:54)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.withInterceptedStreams(EngineExecutionOrchestrator.java:67)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:52)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:114)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:86)
+	at org.junit.platform.launcher.core.DefaultLauncherSession$DelegatingLauncher.execute(DefaultLauncherSession.java:86)
+	at org.apache.maven.surefire.junitplatform.LazyLauncher.execute(LazyLauncher.java:55)
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.execute(JUnitPlatformProvider.java:223)
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invokeAllTests(JUnitPlatformProvider.java:175)
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invoke(JUnitPlatformProvider.java:139)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:456)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:169)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:595)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:581)
+]]></error>
+    <system-out><![CDATA[query: ASK {?a <foo:bar> "test"}
+]]></system-out>
+  </testcase>
+  <testcase name="testDefaultPrefixesDeleteDataInsideOverride" classname="org.eclipse.rdf4j.query.parser.sparql.SPARQLParserTest" time="0.007"/>
+  <testcase name="testOrderByWithAliases1" classname="org.eclipse.rdf4j.query.parser.sparql.SPARQLParserTest" time="0.01">
+    <system-out><![CDATA[query:  SELECT ?x (SUM(?v1)/COUNT(?v1) as ?r) WHERE { ?x <urn:foo> ?v1 } GROUP BY ?x ORDER BY ?r
+sub: CT ?x (SUM(?v1)/COUNT(?v1) as ?r) WHERE
+]]></system-out>
+  </testcase>
+  <testcase name="testOrderByWithAliases2" classname="org.eclipse.rdf4j.query.parser.sparql.SPARQLParserTest" time="0.074">
+    <system-out><![CDATA[query: SELECT (?l AS ?v)
+WHERE { ?s rdfs:label ?l. }
+ORDER BY ?v
+sub: T (?l AS ?v)
+WHERE
+]]></system-out>
+  </testcase>
+  <testcase name="testGroupByProjectionHandling_Aggregate_SimpleExpr" classname="org.eclipse.rdf4j.query.parser.sparql.SPARQLParserTest" time="0.005">
+    <system-out><![CDATA[query: SELECT (COUNT(?s) as ?count) ?o 
+WHERE {
+	?s ?p ?o 
+} GROUP BY ?p
+sub: T (COUNT(?s) as ?count) ?o 
+WHERE
+]]></system-out>
+  </testcase>
+  <testcase name="testNoDefaultPrefixes" classname="org.eclipse.rdf4j.query.parser.sparql.SPARQLParserTest" time="0.009">
+    <system-out><![CDATA[query: SELECT ?s {?s ex:aaa ex:ooo}
+sub: T ?s
+]]></system-out>
+  </testcase>
+  <testcase name="testAdditionalWhitespace_Not_Exists" classname="org.eclipse.rdf4j.query.parser.sparql.SPARQLParserTest" time="0.008">
+    <system-out><![CDATA[query: SELECT * WHERE { ?s ?p ?o. FILTER NOT  EXISTS { ?s ?p ?o } }
+sub: T * WHERE
+]]></system-out>
+  </testcase>
+  <testcase name="testGroupByProjectionHandling_NoAggregate" classname="org.eclipse.rdf4j.query.parser.sparql.SPARQLParserTest" time="0.107">
+    <system-out><![CDATA[query: SELECT DISTINCT ?s (?o AS ?o1) 
+WHERE {
+	?s ?p ?o 
+} GROUP BY ?s ?o
+sub: T DISTINCT ?s (?o AS ?o1) 
+WHERE
+]]></system-out>
+  </testcase>
+  <testcase name="testDefaultPrefixesDeleteDataNoOverride" classname="org.eclipse.rdf4j.query.parser.sparql.SPARQLParserTest" time="0.011"/>
+  <testcase name="testDefaultPrefixesOverride" classname="org.eclipse.rdf4j.query.parser.sparql.SPARQLParserTest" time="0.128">
+    <system-out><![CDATA[query: PREFIX ex: <http://example1.org/> CONSTRUCT {?s ex:bbb ex:ccc} WHERE {?s ex:aaa ex:ooo}
+sub: X ex: <http://example1.org/> CONSTRUCT
+]]></system-out>
+  </testcase>
+  <testcase name="testGroupByProjectionHandling_Aggregate_Constant" classname="org.eclipse.rdf4j.query.parser.sparql.SPARQLParserTest" time="0.005">
+    <system-out><![CDATA[query: SELECT (COUNT(?s) as ?count) (<foo:constant> as ?constant) 
+WHERE {
+	?s ?p ?o 
+} GROUP BY ?o
+sub: T (COUNT(?s) as ?count) (<foo:constant> as ?constant) 
+WHERE
+]]></system-out>
+  </testcase>
+  <testcase name="testParseIntegerObjectValue" classname="org.eclipse.rdf4j.query.parser.sparql.SPARQLParserTest" time="0.005">
+    <system-out><![CDATA[query: select ?Concept where { ?Concept a 1. ?Concept2 a 1. } 
+sub: t ?Concept where
+]]></system-out>
+  </testcase>
+  <testcase name="testDefaultPrefixes" classname="org.eclipse.rdf4j.query.parser.sparql.SPARQLParserTest" time="0.008">
+    <system-out><![CDATA[query: SELECT ?s {?s ex:aaa ex:ooo}
+sub: T ?s
+]]></system-out>
+  </testcase>
+  <testcase name="testParsedGraphQueryRootNode" classname="org.eclipse.rdf4j.query.parser.sparql.SPARQLParserTest" time="0.016">
+    <system-out><![CDATA[query: CONSTRUCT WHERE {?a <foo:bar> "test"}
+sub: RUCT WHERE
+]]></system-out>
+  </testcase>
+  <testcase name="testWildCardPathComplexSubjectHandling" classname="org.eclipse.rdf4j.query.parser.sparql.SPARQLParserTest" time="0.005">
+    <system-out><![CDATA[query: PREFIX : <http://example.org/>
+ ASK { ?a (:comment/^(:subClassOf|(:type/:label))/:type)* ?b } 
+sub: X : <http://example.org/>
+ ASK
+]]></system-out>
+  </testcase>
+  <testcase name="testDeleteDataLineNumberReporting" classname="org.eclipse.rdf4j.query.parser.sparql.SPARQLParserTest" time="0.011"/>
+  <testcase name="testWildCardPathPushNegation" classname="org.eclipse.rdf4j.query.parser.sparql.SPARQLParserTest" time="0.005">
+    <system-out><![CDATA[query: PREFIX : <http://example.org/>
+ ASK {:IBM ^(:|!:) ?jane.} 
+sub: X : <http://example.org/>
+ ASK
+]]></system-out>
+  </testcase>
+  <testcase name="testParsedTupleQueryRootNode" classname="org.eclipse.rdf4j.query.parser.sparql.SPARQLParserTest" time="0.007">
+    <system-out><![CDATA[query: SELECT *  {?a <foo:bar> "test"}
+sub: T *
+]]></system-out>
+  </testcase>
+  <testcase name="testDefaultPrefixesInsertDataInsideOverride" classname="org.eclipse.rdf4j.query.parser.sparql.SPARQLParserTest" time="0.01"/>
+  <testcase name="testWildCardPathPushNegation2" classname="org.eclipse.rdf4j.query.parser.sparql.SPARQLParserTest" time="0.006">
+    <system-out><![CDATA[query: PREFIX : <http://example.org/>
+ ASK {:IBM ^(:|!:) :Jane.} 
+sub: X : <http://example.org/>
+ ASK
+]]></system-out>
+  </testcase>
+  <testcase name="testAdditionalWhitespace_Not_In" classname="org.eclipse.rdf4j.query.parser.sparql.SPARQLParserTest" time="0.014">
+    <system-out><![CDATA[query: SELECT * WHERE { ?s ?p ?o. FILTER(?o NOT  IN (1, 2, 3)) }
+sub: T * WHERE
+]]></system-out>
+  </testcase>
+  <testcase name="testSourceStringAssignment" classname="org.eclipse.rdf4j.query.parser.sparql.SPARQLParserTest" time="0.004">
+    <system-out><![CDATA[query: SELECT * WHERE {?X ?P ?Y }
+sub: T * WHERE
+]]></system-out>
+  </testcase>
+  <testcase name="testGroupByProjectionHandling_Aggregate_SimpleExpr2" classname="org.eclipse.rdf4j.query.parser.sparql.SPARQLParserTest" time="0.01">
+    <system-out><![CDATA[query: SELECT (COUNT(?s) as ?count) ?o 
+WHERE {
+	?s ?p ?o 
+} GROUP BY ?o
+sub: T (COUNT(?s) as ?count) ?o 
+WHERE
+]]></system-out>
+  </testcase>
+  <testcase name="testLongUnicode" classname="org.eclipse.rdf4j.query.parser.sparql.SPARQLParserTest" time="0.02"/>
+  <testcase name="testGroupByProjectionHandling_effectivelyConstant" classname="org.eclipse.rdf4j.query.parser.sparql.SPARQLParserTest" time="0.004">
+    <system-out><![CDATA[query: SELECT  (2  AS ?constant1) (?constant1  AS ?constant2) (?constant2/2  AS ?constant3){
+    ?o ?p ?o .
+} GROUP BY ?o
+sub: T  (2  AS ?constant1) (?constant1  AS ?constant2) (?constant2/2  AS ?constant3)
+]]></system-out>
+  </testcase>
+  <testcase name="testDefaultPrefixesNoOverride" classname="org.eclipse.rdf4j.query.parser.sparql.SPARQLParserTest" time="0.007">
+    <system-out><![CDATA[query: CONSTRUCT {?s ex:bbb ex:ccc} WHERE {?s ex:aaa ex:ooo}
+sub: RUCT
+]]></system-out>
+  </testcase>
+  <testcase name="testGroupByProjectionHandling_Aggregate_Alias2" classname="org.eclipse.rdf4j.query.parser.sparql.SPARQLParserTest" time="0.026">
+    <system-out><![CDATA[query: SELECT (COUNT(?s) as ?count) (?o AS ?o1) 
+WHERE {
+	?s ?p ?o 
+} GROUP BY ?p
+sub: T (COUNT(?s) as ?count) (?o AS ?o1) 
+WHERE
+]]></system-out>
+  </testcase>
+  <testcase name="testGroupByProjectionHandling_function" classname="org.eclipse.rdf4j.query.parser.sparql.SPARQLParserTest" time="0.009">
+    <system-out><![CDATA[query: select (strlen(concat(strlen(?s)+2, "abc", count(?o))) as ?len) where { 
+?s ?p ?o .
+} group by ?s
+sub: t (strlen(concat(strlen(?s)+2, "abc", count(?o))) as ?len) where
+]]></system-out>
+  </testcase>
+</testsuite>
